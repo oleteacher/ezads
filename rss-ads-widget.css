@@ -1,0 +1,124 @@
+/* Base container */
+.rss-ads-widget {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+
+/* Global link reset */
+.rss-ads-widget a {
+  text-decoration: none;
+}
+
+/* Template: card-list (stacked cards) */
+.rss-template-card-list .rss-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: #fff;
+  transition: box-shadow .2s, transform .1s;
+}
+.rss-template-card-list .rss-item:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  transform: translateY(-1px);
+}
+.rss-template-card-list h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+.rss-template-card-list p {
+  margin: 0;
+  color: #444;
+  font-size: .95rem;
+}
+
+/* TRUE horizontal layout */
+.rss-template-horizontal .rss-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fafafa;
+  margin-bottom: 12px;
+}
+.rss-template-horizontal .text {
+  flex: 1;
+}
+.rss-template-horizontal h4 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+.rss-template-horizontal p {
+  margin: 0;
+  font-size: .9rem;
+  color: #555;
+}
+.rss-template-horizontal a {
+  color: inherit;
+  display: flex;
+  width: 100%;
+}
+
+/* Template: banner (single) */
+.rss-template-banner .rss-banner {
+  display: block;
+  padding: 15px;
+  background: linear-gradient(135deg, #4e9af1, #1e6ad1);
+  color: #fff;
+  border-radius: 8px;
+}
+.rss-template-banner strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+.rss-template-banner span {
+  font-size: .95rem;
+  opacity: .9;
+}
+
+/* Template: grid */
+.rss-template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+.rss-template-grid .rss-grid-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
+}
+.rss-template-grid h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+.rss-template-grid p {
+  margin: 0;
+  font-size: .9rem;
+  color: #555;
+}
+
+/* Template: minimal line */
+.rss-template-line .rss-line-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.rss-template-line a {
+  color: #333;
+  font-size: .95rem;
+}
+.rss-template-line strong {
+  color: #000;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .rss-template-horizontal .rss-item {
+    flex-direction: column;
+  }
+}
